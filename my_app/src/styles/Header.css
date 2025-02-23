@@ -1,0 +1,121 @@
+.header_ {
+  /* background-color: rgb(250, 250, 250); */
+  /* width: 100%; */
+  position: relative;
+}
+.header_ .list {
+  display: none;
+}
+.header_ .container {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .header_ .list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 5px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .header_ .container {
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  
+}
+
+.header_ .container .name .navlink {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(54, 54, 54, 0.856);
+}
+@media (max-width: 991px){
+    .header_ .container .name .navlink{
+        font-size: 1.3rem;
+        color: black;
+        font-weight: 700;
+    }
+}
+
+.header_ .container .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.header_ .container .links .navlink{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgba(54, 54, 54, 0.856);
+}
+@media (max-width: 991px){
+
+    .header_ .container .links .navlink {
+        font-size: 1.2rem;
+        color: black;
+        font-weight: 500;
+    }
+}
+
+.header_ .container .links .contacts {
+  display: flex;
+  gap: 15px;
+
+}
+@media (max-width: 991px) {
+  .header_ .container .links .contacts {
+display: none;
+  }
+  .show {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    position: absolute;
+    right:20px;
+    top: 50px;
+    width: 140px;
+    border-top-left-radius:6px ;
+    border-bottom-left-radius:6px ;
+    border-bottom-right-radius: 6px;
+    background-color: rgb(253, 196, 53);
+   
+  }
+  .show::before{
+    content: "";
+    position: absolute;
+    top:-20px;
+    right:0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(253, 196, 53) transparent;
+  }
+  .hide{
+    display: none;
+  }
+  .header_ .container .links .contacts a{
+    color: rgb(0, 0, 0) !important;
+}
+}
+
+.header_ .container .links .contacts span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(54, 54, 54, 0.856);
+}
+
+.header_ .container .links .contacts span a {
+  color: rgba(54, 54, 54, 0.856);
+}
