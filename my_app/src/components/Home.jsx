@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
+import me from '../me.jpg'
 export default function Home() {
   return (
     <div className="home">
@@ -15,7 +16,9 @@ export default function Home() {
             technologically advanced work environment.
           </p>
         </div>
-        <div className="myPic"></div>
+        <div className="myPic">
+          <img src={me} alt="" />
+        </div>
       </div>
     </div>
   );
